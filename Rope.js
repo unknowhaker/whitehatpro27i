@@ -8,7 +8,7 @@ class Rope {
             //pointB{x:this.offsetX, y:this.offsetY};
             bodyA:bodyA,
             bodyB:bodyB,
-            pointB: {x:this.offsetX, y:this.offsetY
+            pointB: {x:this.offsetX, y:this.offsetY}
         }
         this.chain=Constraint.create(option);
         World.add(world,this.chain);
@@ -20,7 +20,7 @@ class Rope {
         strokeWeight(3);
         //line (possA.x,possA.y,possB.x,possB.y);
         //pop();
-        line (possA.x,possA.y,possB.x+offsetX,possB.y+offsetY);
+        line (possA.x,possA.y,possB.x+this.offsetX,possB.y+this.offsetY);
         pop();
     }
 }
